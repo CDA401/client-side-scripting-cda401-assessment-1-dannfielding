@@ -68,3 +68,23 @@ body {
     width: 50%;
     font-family: monospace;
 }
+
+.pictures {
+    display: none;
+}
+
+.row {
+text-align: justify;
+}
+
+.row img {
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+}
+
+.row:after {
+    content: '';
+    display: inline-block;
+    width: 100%;
+}
