@@ -88,3 +88,18 @@ text-align: justify;
     display: inline-block;
     width: 100%;
 }
+
+.text {
+  color: #f2f2f2;
+  font-size: 40px;
+  position: absolute;
+  bottom: 300px;
+  width:60%;
+  height:60px;
+  padding-top: 25px;
+  padding-bottom: 10px;
+  left: 20%;
+  text-align: center;
+  background-color:rgba(0,0,0,0.7);
+}
+
