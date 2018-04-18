@@ -1,71 +1,6 @@
 body {
     margin: 0;
-}
-
-
-
-
-.footer {
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 60px;
-    font-size: 17px;
-    font-family: monospace;
-    padding-top: 5px;
-    background-color: #333;
-    color: white;
-    text-align: center;
-    clear: both;
-
-}
-
-.mainsection h2 {
-    text-align: center;
-    font-size: 45px;
-    text-transform: uppercase;
-    font-family: monospace;
-}
-
-.information {
-    text-align: left;
-    float: left;
-    width: 50%;
-    font-family: monospace;
-}
-
-.pictures {
-    display: none;
-}
-
-.row {
-text-align: justify;
-}
-
-.row img {
-    display: inline-block;
-    width: 300px;
-    height: 300px;
-}
-
-.row:after {
-    content: '';
-    display: inline-block;
-    width: 100%;
-}
-
-.text {
-  color: #f2f2f2;
-  font-size: 40px;
-  position: absolute;
-  bottom: 300px;
-  width:60%;
-  height:60px;
-  padding-top: 25px;
-  padding-bottom: 10px;
-  left: 20%;
-  text-align: center;
-  background-color:rgba(0,0,0,0.7);
+    background-color: #2c2c2d;
 }
 
 .navigation {
@@ -89,19 +24,98 @@ text-align: justify;
     text-decoration: none;
 }
 
-.navigation img {
-    width: 25px;
-    height: 25px;
-    float: left;
-    padding: 20px;
-}
-
 .navigation h1 {
     font-size: 20px;
     float: left;
+    font-weight: normal;
     padding: 10px;
     padding-left: 50px;
     font-family: sans-serif;
     color: #fff;
+}
 
+.time {
+    color: #fff;
+    padding-left: 47%;
+    font-size: 20px;
+}
+
+.pictures {
+    display: none;
+}
+
+.caption {
+    color: #f2f2f2;
+    font-size: 40px;
+    position: absolute;
+    bottom: 300px;
+    width: 60%;
+    height: 60px;
+    padding-top: 25px;
+    padding-bottom: 10px;
+    left: 20%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+
+.fade {
+  animation-name: fade;
+  animation-duration: 5s;
+}
+
+
+@keyframes fade {
+  from {opacity: .9} 
+  to {opacity: 1}
+}
+
+.mainsection h2 {
+    text-align: center;
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 40px;
+}
+
+.mainsection p {
+    text-align: center;
+    width: 500px;
+    margin-left: auto;
+    color: #fff;
+    margin-right: auto;
+    font-size: 18px;
+}
+
+
+.footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    font-size: 17px;
+    font-family: sans-serif;
+    padding-top: 5px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    clear: both;
+}
+
+.container div{
+    display: inline-block;
+    margin: auto 0;
+}
+
+.container img{
+    width: 300px;
+    height: 300px;
+    padding: 5px;
+}
+
+.container p{
+    text-align:center;
+}
+
+.map iframe {
+    right: 10px;
 }
