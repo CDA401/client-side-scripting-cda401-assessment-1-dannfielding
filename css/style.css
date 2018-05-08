@@ -34,6 +34,11 @@ body {
     color: #fff;
 }
 
+.mainsection h3 {
+    font-family: sans-serif;
+    color: #fff;
+}
+
 .time {
     color: #fff;
     padding-left: 47%;
@@ -116,6 +121,29 @@ body {
     text-align:center;
 }
 
-.map iframe {
-    right: 10px;
+.contactform {
+margin: 0 auto; 
+padding-left: 50px;
+float: left;
+}
+
+.text {
+    color: white;
+}
+
+.mainsection textarea {
+    width: 700px;
+    height: 100px;
+    padding-bottom: 10px;
+}
+
+
+input[type=text] {
+    width: 700px;
+    margin: 8px 0;
+}
+
+.map {
+    float: right;
+    padding-right: 50px;
 }

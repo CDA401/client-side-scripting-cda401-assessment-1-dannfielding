@@ -21,5 +21,3 @@ function main() {
         document.getElementById("time").innerHTML = d.toLocaleTimeString();
     }
 }
-
-

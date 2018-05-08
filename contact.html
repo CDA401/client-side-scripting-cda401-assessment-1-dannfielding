@@ -6,6 +6,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="css/style.css">
+
 <script type="text/javascript" src="scripts/main.js"></script>
 
 <body onload=main()>
@@ -45,11 +46,68 @@
     </div>
 
 
-<!-- Main Section -->
-<div class="mainsection">
-    <h2> Contact Us</h2>
-    <div class="map">
-        <iframe src="https://www.google.com/maps/embed?pb=!4v1524083688589!6m8!1m7!1sTF-xxEeDHZojvgW1g5ClxA!2m2!1d50.90555633109722!2d-1.404429963074536!3f128.87226654032196!4f0!5f1.1924812503605782" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    <!-- Main Section -->
+    <div class="mainsection">
+        <h2> Contact Us</h2>
+
+        <div class="contactform">
+            <form>
+                <h3> Message Us</h3>
+                <div class="text">
+                    <label for="first_name">First Name:</label>
+                </div>
+
+                <div class="input">
+                    <input type="text" id="first_name" name="first_name">
+                </div>
+
+                <div class="text">
+                    <label for="last_name">Last Name:</label>
+                </div>
+
+                <div class="input">
+                    <input type="text" id="last_name" name="last_name">
+                </div>
+
+                <div class="text">
+                    <label for="email">Email:</label>
+                </div>
+
+                <div class="input">
+                    <input type="text" id="email" name="email">
+                </div>
+
+                <div class="text">
+                    <label for="phone">Phone:</label>
+                </div>
+
+                <div class="input">
+                    <input type="text" id="phone" name="phone">
+                </div>
+
+                <div class="text">
+                    <label for="message">Message:</label>
+                </div>
+
+                <div class="input">
+                    <textarea name="comment" form="form"></textarea>
+                </div>
+
+                <div class="input">
+                    <input type="submit" value="Submit">
+                </div>
+
+
+            </form>
+
+        </div>
+
+        <div class="map">
+            <h3> Find Us</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d889.554926043263!2d-1.4061642623856139!3d50.904452252850724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2suk!4v1525814990761" width="900" height="450" frameborder="0" style="border:0"
+                allowfullscreen></iframe>
+        </div>
+
     </div>
 
     <!-- Footer -->
@@ -57,4 +115,4 @@
         <p>Daniel Fielding 2018 - Solent Pizza</p>
     </div>
 
-    </html>
+</html>
