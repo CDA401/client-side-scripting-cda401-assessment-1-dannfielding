@@ -51,38 +51,42 @@
         <h2> Contact Us</h2>
 
         <div class="contactform">
-            <form>
+            <form name="contactform" onsubmit="return contactValidation()">
                 <h3> Message Us</h3>
                 <div class="text">
-                    <label for="first_name">First Name:</label>
+                    <label for="first_name">First Name: *</label>
                 </div>
 
                 <div class="input">
                     <input type="text" id="first_name" name="first_name">
+                    <p id="first_name_error"></p>
                 </div>
 
                 <div class="text">
-                    <label for="last_name">Last Name:</label>
+                    <label for="last_name">Last Name: *</label>
                 </div>
 
                 <div class="input">
                     <input type="text" id="last_name" name="last_name">
+                    <p id="last_name_error"></p>
                 </div>
 
                 <div class="text">
-                    <label for="email">Email:</label>
+                    <label for="email">Email: *</label>
                 </div>
 
                 <div class="input">
                     <input type="text" id="email" name="email">
+                    <p id="email_error"></p>
                 </div>
 
                 <div class="text">
-                    <label for="phone">Phone:</label>
+                    <label for="phone">Phone: *</label>
                 </div>
 
                 <div class="input">
                     <input type="text" id="phone" name="phone">
+                    <p id="phone_error"></p>
                 </div>
 
                 <div class="text">
@@ -94,7 +98,7 @@
                 </div>
 
                 <div class="input">
-                    <input type="submit" value="Submit">
+                    <button onclick="contactValidation()">Submit</button>
                 </div>
 
 
@@ -112,6 +116,7 @@
 
     <!-- Footer -->
     <div class="footer">
+        <a name="exactline">
         <p>Daniel Fielding 2018 - Solent Pizza</p>
     </div>
 
