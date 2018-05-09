@@ -24,6 +24,14 @@ function main() {
     }
 }
 
+function rollover(image) {
+    image.src = "pictures/indexrollover1.jpg";
+}
+
+function rolloveroff(image) {
+    image.src = "pictures/indexrollover.jpg";
+}
+
 
 
 function contactValidation() {
