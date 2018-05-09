@@ -65,14 +65,18 @@ body {
 
 
 .fade {
-  animation-name: fade;
-  animation-duration: 5s;
+    animation-name: fade;
+    animation-duration: 5s;
 }
 
 
 @keyframes fade {
-  from {opacity: .9} 
-  to {opacity: 1}
+    from {
+        opacity: .9
+    }
+    to {
+        opacity: 1
+    }
 }
 
 .mainsection h2 {
@@ -106,29 +110,45 @@ body {
     clear: both;
 }
 
-.container div{
+.container div {
     display: inline-block;
     margin: auto 0;
 }
 
-.container img{
+.container img {
     width: 300px;
     height: 300px;
     padding: 5px;
 }
 
-.container p{
-    text-align:center;
+.container p {
+    text-align: center;
 }
 
 .contactform {
-margin: 0 auto; 
-padding-left: 50px;
-float: left;
+    margin: 0 auto;
+    padding-left: 50px;
+    float: left;
 }
 
-.text {
+.contactform label {
     color: white;
+}
+
+.contactform input[type=text] {
+    width: 700px;
+    margin: 8px 0;
+
+}
+
+.contactform input[type=number] {
+    width: 700px;
+    margin: 8px 0;
+
+}
+
+.contactform p {
+    color: red;
 }
 
 .mainsection textarea {
@@ -137,18 +157,8 @@ float: left;
     padding-bottom: 10px;
 }
 
-
-input[type=text] {
-    width: 700px;
-    margin: 8px 0;
-}
-
 .map {
     float: right;
     padding-right: 50px;
 }
 
-
-.contactform p {
-    color: red;
-}
