@@ -102,3 +102,40 @@ function lnameValidation() {
         }
     }
 
+
+    
+    function orderValidation() {
+
+    var address = document.forms["orderform"]["address"].value;
+    if (address == "") {
+        document.getElementById("address_error").innerHTML = "Please enter an address.";
+        event.preventDefault();
+    }
+
+    var postcode = document.forms["orderform"]["post"].value;
+    if (postcode == "") {
+        document.getElementById("post_error").innerHTML = "Please enter a postcode.";
+        event.preventDefault();
+    }
+}
+
+    function addressValidation() {
+    var address = document.getElementById("address");
+
+    if (address.value == "") {
+        address.style.backgroundColor = "red";
+       } else {
+            address.style.backgroundColor = "";
+        }
+    }
+    
+    function postValidation() {
+    var postcode = document.getElementById("post");
+
+    if (postcode.value == "") {
+        postcode.style.backgroundColor = "red";
+       } else {
+            postcode.style.backgroundColor = "";
+        }
+    }
+    

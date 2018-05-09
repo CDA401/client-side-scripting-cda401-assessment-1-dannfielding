@@ -129,7 +129,61 @@ body {
     text-align: center;
 }
 
-.contactform {
+.pizzabase {
+    text-align: center;
+    font-family: sans-serif;
+    color: #fff;
+    width: 33%;
+    margin: 0 auto;
+    float: left;
+}
+
+#base_error {
+    color: red;
+}
+
+#post_error {
+    color: red;
+}
+
+#address_error {
+    color: red;
+}
+
+.toppings {
+    text-align: center;
+    font-family: sans-serif;
+    color: #fff;
+    width: 33%;
+    float: left;
+    margin: 0 auto;
+}
+
+.extras {
+    text-align: center;
+    font-family: sans-serif;
+    color: #fff;
+    float: left;
+    width: 33%;
+    margin: 0 auto;
+    
+}
+
+.address {
+    padding-top: 20px;
+    text-align: center;
+    font-family: sans-serif;
+    color: #fff;
+    margin: 0 auto;
+    border-top: 1px;
+}
+
+.orderform input[type=text] {
+    width: 500px;
+    margin: 8px 0;
+}
+
+.contactform{
     margin: 0 auto;
     padding-left: 50px;
     float: left;
