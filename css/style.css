@@ -111,7 +111,7 @@ body {
 }
 
 
-.rollover{
+.rollover {
     margin: 0 auto;
     display: block;
 }
@@ -142,6 +142,10 @@ body {
     color: red;
 }
 
+#topping_error {
+    color: red;
+}
+
 #post_error {
     color: red;
 }
@@ -166,7 +170,7 @@ body {
     float: left;
     width: 33%;
     margin: 0 auto;
-    
+
 }
 
 .address {
@@ -183,7 +187,7 @@ body {
     margin: 8px 0;
 }
 
-.contactform{
+.contactform {
     margin: 0 auto;
     padding-left: 50px;
     float: left;
@@ -219,4 +223,3 @@ body {
     float: right;
     padding-right: 50px;
 }
-

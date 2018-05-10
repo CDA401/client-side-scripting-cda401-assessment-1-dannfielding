@@ -1,7 +1,7 @@
 function main() {
     var slideIndex = 0;
     showSlides();
-    
+
 
 
     function showSlides() {
@@ -40,7 +40,7 @@ function contactValidation() {
         document.getElementById("first_name_error").innerHTML = "Please enter a first name.";
         event.preventDefault();
     }
-    
+
     var last_name = document.forms["contactform"]["lname"].value;
     if (last_name == "") {
         document.getElementById("last_name_error").innerHTML = "Please enter a last name.";
@@ -52,13 +52,15 @@ function contactValidation() {
         document.getElementById("email_error").innerHTML = "Please enter a email address.";
         event.preventDefault();
     }
-    
+
     var phone = document.forms["contactform"]["phone"].value;
     if (phone == "") {
         document.getElementById("phone_error").innerHTML = "Please enter a phone number.";
         event.preventDefault();
     }
-    
+
+
+
 
 }
 
@@ -67,45 +69,62 @@ function fnameValidation() {
 
     if (first_name.value == "") {
         first_name.style.backgroundColor = "red";
-       } else {
-            first_name.style.backgroundColor = "";
-        }
     }
+    else {
+        first_name.style.backgroundColor = "";
+    }
+}
 
 function lnameValidation() {
     var last_name = document.getElementById("lname");
 
     if (last_name.value == "") {
         last_name.style.backgroundColor = "red";
-       } else {
-            last_name.style.backgroundColor = "";
-        }
     }
-    
-    function emailValidation() {
+    else {
+        last_name.style.backgroundColor = "";
+    }
+}
+
+function emailValidation() {
     var email = document.getElementById("emailv");
 
     if (email.value == "") {
         email.style.backgroundColor = "red";
-       } else {
-            email.style.backgroundColor = "";
-        }
     }
-    
-    function phoneValidation() {
+    else {
+        email.style.backgroundColor = "";
+    }
+}
+
+function phoneValidation() {
     var phone = document.getElementById("phonev");
 
     if (phone.value == "") {
         phone.style.backgroundColor = "red";
-       } else {
-            phone.style.backgroundColor = "";
-        }
     }
+    else {
+        phone.style.backgroundColor = "";
+    }
+}
 
-
+function orderValidation(theForm) {
+    var base = document.forms["orderform"]["base"].value;
+    var orderform = document.forms["orderform"]["topping"]
     
-    function orderValidation() {
-
+    if (base == "") {
+        document.getElementById("base_error").innerHTML = "Please select a pizzabase.";
+        event.preventDefault();
+    }
+    
+    if (theForm.topping1.checked == false &&
+    theForm.topping2.checked == false &&
+    theForm.topping3.checked == false &&
+    theForm.topping4.checked == false) {
+    document.getElementById("topping_error").innerHTML = "Please select at least one topping.";
+    event.preventDefault();
+    }
+    
     var address = document.forms["orderform"]["address"].value;
     if (address == "") {
         document.getElementById("address_error").innerHTML = "Please enter an address.";
@@ -119,23 +138,24 @@ function lnameValidation() {
     }
 }
 
-    function addressValidation() {
+function addressValidation() {
     var address = document.getElementById("address");
 
     if (address.value == "") {
         address.style.backgroundColor = "red";
-       } else {
-            address.style.backgroundColor = "";
-        }
     }
-    
-    function postValidation() {
+    else {
+        address.style.backgroundColor = "";
+    }
+}
+
+function postValidation() {
     var postcode = document.getElementById("post");
 
     if (postcode.value == "") {
         postcode.style.backgroundColor = "red";
-       } else {
-            postcode.style.backgroundColor = "";
-        }
     }
-    
+    else {
+        postcode.style.backgroundColor = "";
+    }
+}

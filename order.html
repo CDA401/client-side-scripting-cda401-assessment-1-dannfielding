@@ -49,22 +49,22 @@
     <div class="mainsection">
         <h2> Order</h2>
         <div class="orderform">
-            <form name="orderform" form id="orderform" onsubmit="return orderValidation();">
+            <form name="orderform" form id="orderform" onsubmit="return orderValidation(this);">
                 <div class="pizzabase">
                     <p>Choose your pizzabase:</p>
                     <p><input type="radio" name="base" value="base_small"> Small <span class="price">£5</span></p>
                     <p><input type="radio" name="base" value="base_medium"> Medium <span class="price">£7.50</span></p>
                     <p><input type="radio" name="base" value="base_large"> Large <span class="price">£10</span></p>
                     <p><input type="radio" name="base" value="base_xlarge"> X-Large <span class="price">£12.5</span></p>
-                                        <p id="base_error"></p>
+                    <p id="base_error"></p>
                 </div>
 
                 <div class="toppings">
                     <p>Choose your toppings:</p>
-                    <p><input type="checkbox" name="topping" value="cheese">Cheese <span class="price">£0.20</span></p>
-                    <p><input type="checkbox" name="topping" value="mushrooms">Mushrooms <span class="price">£0.40</span></p>
-                    <p><input type="checkbox" name="topping" value="ham">Ham <span class="price">£0.50</span></p>
-                    <p><input type="checkbox" name="topping" value="anchovies">Anchovies <span class="price">£0.60</span></p>
+                    <p><input type="checkbox" name="topping1" value="cheese">Cheese <span class="price">£0.20</span></p>
+                    <p><input type="checkbox" name="topping2" value="mushrooms">Mushrooms <span class="price">£0.40</span></p>
+                    <p><input type="checkbox" name="topping3" value="ham">Ham <span class="price">£0.50</span></p>
+                    <p><input type="checkbox" name="topping4" value="anchovies">Anchovies <span class="price">£0.60</span></p>
                     <p id="topping_error"></p>
                 </div>
 
@@ -87,11 +87,11 @@
                         </p><input type="text" id="post" name="post" onblur="postValidation()">
                         <p id="post_error"></p>
                     </div>
-                    
+
                     <div class="order">
                         <input type="submit" value="Submit">
                     </div>
-                
+
                     <div class="reset">
                         <input type="reset" value="Reset">
                     </div>
