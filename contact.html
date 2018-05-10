@@ -6,8 +6,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="css/style.css">
-
-<script type="text/javascript" src="scripts/main.js"></script>
+<script src="scripts/main.js"></script>
 
 <body onload=main()>
     <!-- Navigation Bar -->
@@ -16,32 +15,26 @@
         <a href="contact.html#contactanchor">Contact Us</a>
         <a href="order.html#orderanchor">Order</a>
         <a class="active" href="index.html">Home</a>
-        <div class="time">
-            <p id="time"></p>
+        <div class="time_date">
+            <p> | </p> <p id="date"></p> <p> - </p> <p id="time"></p>
         </div>
     </div>
 
     <!-- Carousel -->
     <div class="carousel">
-        <div class="pictures fade">
+        <div class="pictures">
             <img src="pictures/pizza1.jpg" style="width:100%">
-            <div class="text_shape">
-                <div class="caption">QUALITY PIZZA AT AN AFFORDABLE PRICE</div>
-            </div>
+            <div class="caption">QUALITY PIZZA AT AN AFFORDABLE PRICE</div>
         </div>
 
-        <div class="pictures fade">
+        <div class="pictures">
             <img src="pictures/pizza2.jpg" style="width:100%">
-            <div class="text_shape">
-                <div class="caption">QUALITY PIZZA AT AN AFFORDABLE PRICE</div>
-            </div>
+            <div class="caption">QUALITY PIZZA AT AN AFFORDABLE PRICE</div>
         </div>
 
-        <div class="pictures fade">
+        <div class="pictures">
             <img src="pictures/pizza3.jpg" style="width:100%">
-            <div class="text_shape">
-                <div class="caption">QUALITY PIZZA AT AN AFFORDABLE PRICE</div>
-            </div>
+            <div class="caption">QUALITY PIZZA AT AN AFFORDABLE PRICE</div>
         </div>
     </div>
 
@@ -49,7 +42,7 @@
     <!-- Main Section -->
     <div class="mainsection">
         <h2> Contact Us</h2>
-
+        <!--Form-->
         <div class="contactform">
             <form name="contactform" form id="contactform" onsubmit="return contactValidation();">
                 <h3> Message Us</h3>
@@ -78,13 +71,13 @@
                     <p id="phone_error"></p>
                 </div>
 
-                <div class="text">
-                    <label for="message">Message:</label>
+                <div class="message">
+                    <label for="phone">Message:</label>
+                    </p><input type="text" id="message" name="message" onblur="messageValidation()">
+                    <p id="message_error"></p>
                 </div>
 
-                <div class="input">
-                    <textarea name="comment" form="contactform"></textarea>
-                </div>
+
 
                 <div class="input">
                     <input type="submit" value="Submit">
@@ -95,17 +88,17 @@
 
         </div>
 
+        <!--Map-->
         <div class="map">
             <h3> Find Us</h3>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d889.554926043263!2d-1.4061642623856139!3d50.904452252850724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2suk!4v1525814990761" width="900" height="450" frameborder="0" style="border:0"
-                allowfullscreen></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d889.554926043263!2d-1.4061642623856139!3d50.904452252850724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2suk!4v1525814990761" width="900" height="450" allowfullscreen></iframe>
         </div>
 
     </div>
 
     <!-- Footer -->
     <div class="footer">
-        <a name="contactanchor">
+        <a id="contactanchor">
             <p>Daniel Fielding 2018 - Solent Pizza</p>
     </div>
 

@@ -6,7 +6,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="css/style.css">
-<script type="text/javascript" src="scripts/main.js"></script>
+<script src="scripts/main.js"></script>
 
 <body onload=main()>
     <!-- Navigation Bar -->
@@ -15,33 +15,27 @@
         <a href="contact.html#contactanchor">Contact Us</a>
         <a href="order.html#orderanchor">Order</a>
         <a class="active" href="index.html">Home</a>
-        <div class="time">
-            <p id="time"></p>
+        <div class="time_date">
+            <p> | </p> <p id="date"></p> <p> - </p> <p id="time"></p>
         </div>
     </div>
 
     <!-- Carousel -->
     <div class="carousel">
-        <div class="pictures fade">
+        <div class="pictures">
             <img src="pictures/pizza1.jpg" style="width:100%">
-            <div class="text_shape">
-                <div class="caption">QUALITY PIZZA AT AN AFFORDABLE PRICE</div>
-            </div>
+            <div class="caption">QUALITY PIZZA AT AN AFFORDABLE PRICE</div>
         </div>
 
-        <div class="pictures fade">
-            <img src="pictures/pizza2.jpg" style="width:100%">
-            <div class="text_shape">
-                <div class="caption">QUALITY PIZZA AT AN AFFORDABLE PRICE</div>
-            </div>
-        </div>
+    <div class="pictures">
+        <img src="pictures/pizza2.jpg" style="width:100%">
+        <div class="caption">QUALITY PIZZA AT AN AFFORDABLE PRICE</div>
+    </div>
 
-        <div class="pictures fade">
-            <img src="pictures/pizza3.jpg" style="width:100%">
-            <div class="text_shape">
-                <div class="caption">QUALITY PIZZA AT AN AFFORDABLE PRICE</div>
-            </div>
-        </div>
+    <div class="pictures">
+        <img src="pictures/pizza3.jpg" style="width:100%">
+        <div class="caption">QUALITY PIZZA AT AN AFFORDABLE PRICE</div>
+    </div>
     </div>
 
 
@@ -50,6 +44,8 @@
         <h2> About Us</h2>
         <p>Solent Pizza offers a wide range of delicious pizzas in lots of different sizes. Freshly baked and locally sourced ingredients go towards making the pizzas inwhich you know and love. Based within the center of Southampton on the main highstreet
             customers love our amazing value pizzas. The business was created in 2005 by head cook Giovanni Roberto as he ventured into the UK to provide the citizens of Southampton a taste of Italy.</p>
+
+        <!--Rollover image-->
         <h2>Daily Deal</h2>
         <div class="rollover">
             <div class="container">
@@ -57,10 +53,11 @@
             </div>
 
         </div>
+    </div>
 
-        <!-- Footer -->
-        <div class="footer">
-            <p>Daniel Fielding 2018 - Solent Pizza</p>
-        </div>
+    <!-- Footer -->
+    <div class="footer">
+        <p>Daniel Fielding 2018 - Solent Pizza</p>
+    </div>
 
 </html>

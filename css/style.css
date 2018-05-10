@@ -39,9 +39,12 @@ body {
     color: #fff;
 }
 
-.time {
+.time_date p{
+    text-align: center;
+    padding-top: 4px;
     color: #fff;
-    padding-left: 47%;
+    display: inline-block;
+    font-family: sans-serif;
     font-size: 20px;
 }
 
@@ -113,6 +116,11 @@ body {
     text-align: center;
 }
 
+.orderform input[type=text] {
+    width: 500px;
+    margin: 8px 0;
+}
+
 .pizzabase {
     text-align: center;
     font-family: sans-serif;
@@ -120,22 +128,6 @@ body {
     width: 33%;
     margin: 0 auto;
     float: left;
-}
-
-#base_error {
-    color: red;
-}
-
-#topping_error {
-    color: red;
-}
-
-#post_error {
-    color: red;
-}
-
-#address_error {
-    color: red;
 }
 
 .toppings {
@@ -157,16 +149,39 @@ body {
 
 }
 
-.address {
+#base_error {
+    color: red;
+}
+
+#topping_error {
+    color: red;
+}
+
+#name_error {
+    color: red;
+}
+
+#phone_error {
+    color: red;
+}
+
+#post_error {
+    color: red;
+}
+
+#address_error {
+    color: red;
+}
+
+#spacer {
+color: #2c2c2d;
+}
+
+.info {
     text-align: center;
     font-family: sans-serif;
     color: #fff;
     margin: 0 auto;
-}
-
-.orderform input[type=text] {
-    width: 500px;
-    margin: 8px 0;
 }
 
 .contactform {
@@ -204,4 +219,14 @@ body {
 .map {
     float: right;
     padding-right: 50px;
+}
+
+.buttons {
+    display: inline;
+    padding-bottom: 10px;
+}
+
+.total p {
+    display: inline;
+    text-align: center;
 }

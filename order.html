@@ -6,49 +6,43 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="css/style.css">
-<script type="text/javascript" src="scripts/main.js"></script>
+<script src="scripts/main.js"></script>
 
-<body onload=main()>
+<body onload= main(); >
     <!-- Navigation Bar -->
     <div class="navigation">
         <h1>Solent Pizza</h1>
         <a href="contact.html#contactanchor">Contact Us</a>
         <a href="order.html#orderanchor">Order</a>
         <a class="active" href="index.html">Home</a>
-        <div class="time">
-            <p id="time"></p>
+        <div class="time_date">
+            <p> | </p> <p id="date"></p> <p> - </p> <p id="time"></p>
         </div>
     </div>
 
     <!-- Carousel -->
     <div class="carousel">
-        <div class="pictures fade">
+        <div class="pictures">
             <img src="pictures/pizza1.jpg" style="width:100%">
-            <div class="text_shape">
-                <div class="caption">QUALITY PIZZA AT AN AFFORDABLE PRICE</div>
-            </div>
+            <div class="caption">QUALITY PIZZA AT AN AFFORDABLE PRICE</div>
         </div>
 
-        <div class="pictures fade">
+        <div class="pictures">
             <img src="pictures/pizza2.jpg" style="width:100%">
-            <div class="text_shape">
-                <div class="caption">QUALITY PIZZA AT AN AFFORDABLE PRICE</div>
-            </div>
+            <div class="caption">QUALITY PIZZA AT AN AFFORDABLE PRICE</div>
         </div>
 
-        <div class="pictures fade">
+        <div class="pictures">
             <img src="pictures/pizza3.jpg" style="width:100%">
-            <div class="text_shape">
-                <div class="caption">QUALITY PIZZA AT AN AFFORDABLE PRICE</div>
-            </div>
+            <div class="caption">QUALITY PIZZA AT AN AFFORDABLE PRICE</div>
         </div>
     </div>
 
-
     <!-- Main Section -->
     <div class="mainsection">
-        <h2> Order</h2>
+        <!--Order Form-->
         <div class="orderform">
+            <h2> Order</h2>
             <form name="orderform" form id="orderform" onsubmit="return orderValidation(this);">
                 <div class="pizzabase">
                     <p>Choose your pizzabase:</p>
@@ -74,11 +68,24 @@
                     <p><input type="checkbox" name="extra" onclick="realtimetotal()" id="garlic_bread" value="2">Garlic Bread <span class="price">£2</span></p>
                 </div>
 
+                <p id="spacer">.</p>
 
-                <div class="address">
-                    <p>Delivery Address:</p>
+                <!--Information Form-->
+                <div class="info">
+                    <div class="Name">
+                        <p>Delivery Address:</p>
+                        <label for="name">Name:</label>
+                        </p><input type="text" id="name" name="name" onblur="nameValidation()">
+                        <p id="name_error"></p>
+                    </div>
+                    <div class="Phone">
+                        <label for="postcode">Phone:</label>
+                        </p><input type="text" id="phone" name="phone" onblur="phoneValidation()">
+                        <p id="phone_error"></p>
+                    </div>
+
                     <div class="address1">
-                        <label for="address1">Address 1:</label>
+                        <label for="address1">Address:</label>
                         </p><input type="text" name="address" id="address" onblur="addressValidation()">
                         <p id="address_error"></p>
                     </div>
@@ -89,24 +96,22 @@
                         <p id="post_error"></p>
                     </div>
 
-                    <div class="order">
+                    <div class="buttons">
                         <input type="submit" value="Submit">
-                    </div>
-
-                    <div class="reset">
                         <input type="reset" value="Reset" onreset="realtimetotal()">
                     </div>
-                    
+
                     <div class="total">
-                        <p id="totalprice">0 <p> Pounds</p>
+                        <p>Total: £</p>
+                        <p id="totalprice">0
                     </div>
-                    
+
                 </div>
 
         </div>
         <!-- Footer -->
         <div class="footer">
-            <a name="orderanchor">
+            <a id="orderanchor">
                 <p>Daniel Fielding 2018 - Solent Pizza</p>
         </div>
 
