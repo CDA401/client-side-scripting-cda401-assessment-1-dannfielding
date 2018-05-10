@@ -52,27 +52,28 @@
             <form name="orderform" form id="orderform" onsubmit="return orderValidation(this);">
                 <div class="pizzabase">
                     <p>Choose your pizzabase:</p>
-                    <p><input type="radio" name="base" value="base_small"> Small <span class="price">£5</span></p>
-                    <p><input type="radio" name="base" value="base_medium"> Medium <span class="price">£7.50</span></p>
-                    <p><input type="radio" name="base" value="base_large"> Large <span class="price">£10</span></p>
-                    <p><input type="radio" name="base" value="base_xlarge"> X-Large <span class="price">£12.5</span></p>
+                    <p><input type="radio" name="base" onclick="realtimetotal()" id="base_small" value="5"> Small <span class="price">£5</span></p>
+                    <p><input type="radio" name="base" onclick="realtimetotal()" id="base_medium" value="7.50"> Medium <span class="price">£7.50</span></p>
+                    <p><input type="radio" name="base" onclick="realtimetotal()" id="base_large" value="10"> Large <span class="price">£10</span></p>
+                    <p><input type="radio" name="base" onclick="realtimetotal()" id="base_xlarge" value="12.50"> X-Large <span class="price">£12.50</span></p>
                     <p id="base_error"></p>
                 </div>
 
                 <div class="toppings">
                     <p>Choose your toppings:</p>
-                    <p><input type="checkbox" name="topping1" value="cheese">Cheese <span class="price">£0.20</span></p>
-                    <p><input type="checkbox" name="topping2" value="mushrooms">Mushrooms <span class="price">£0.40</span></p>
-                    <p><input type="checkbox" name="topping3" value="ham">Ham <span class="price">£0.50</span></p>
-                    <p><input type="checkbox" name="topping4" value="anchovies">Anchovies <span class="price">£0.60</span></p>
+                    <p><input type="checkbox" name="topping1" onclick="realtimetotal()" id="cheese" value="0.20">Cheese <span class="price">£0.20</span></p>
+                    <p><input type="checkbox" name="topping2" onclick="realtimetotal()" id="mushrooms" value="0.40">Mushrooms <span class="price">£0.40</span></p>
+                    <p><input type="checkbox" name="topping3" onclick="realtimetotal()" id="ham" value="0.50">Ham <span class="price">£0.50</span></p>
+                    <p><input type="checkbox" name="topping4" onclick="realtimetotal()" id="anchovies" value="0.60">Anchovies <span class="price">£0.60</span></p>
                     <p id="topping_error"></p>
                 </div>
 
                 <div class="extras">
                     <p>Choose your extras:</p>
-                    <p><input type="checkbox" name="extra" value="chips">Chips <span class="price">£1.50</span></p>
-                    <p><input type="checkbox" name="extra" value="drink">Drink <span class="price">£2</span></p>
+                    <p><input type="checkbox" name="extra" onclick="realtimetotal()" id="chips" value="1.50">Chips <span class="price">£1.50</span></p>
+                    <p><input type="checkbox" name="extra" onclick="realtimetotal()" id="garlic_bread" value="2">Garlic Bread <span class="price">£2</span></p>
                 </div>
+
 
                 <div class="address">
                     <p>Delivery Address:</p>
@@ -93,15 +94,16 @@
                     </div>
 
                     <div class="reset">
-                        <input type="reset" value="Reset">
+                        <input type="reset" value="Reset" onreset="realtimetotal()">
                     </div>
+                    
+                    <div class="total">
+                        <p id="totalprice">0 <p> Pounds</p>
+                    </div>
+                    
                 </div>
 
         </div>
-
-
-
-
         <!-- Footer -->
         <div class="footer">
             <a name="orderanchor">

@@ -63,22 +63,6 @@ body {
     background-color: rgba(0, 0, 0, 0.7);
 }
 
-
-.fade {
-    animation-name: fade;
-    animation-duration: 5s;
-}
-
-
-@keyframes fade {
-    from {
-        opacity: .9
-    }
-    to {
-        opacity: 1
-    }
-}
-
 .mainsection h2 {
     text-align: center;
     color: #fff;
@@ -174,12 +158,10 @@ body {
 }
 
 .address {
-    padding-top: 20px;
     text-align: center;
     font-family: sans-serif;
     color: #fff;
     margin: 0 auto;
-    border-top: 1px;
 }
 
 .orderform input[type=text] {
